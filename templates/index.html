@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression Predictor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@700&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a;
+            margin: 0;
+            color: #e6d5b8;
+            text-align: center;
+            flex-direction: column;
+        }
+        .title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #e6d5b8;
+        }
+        .card {
+            background: #262626;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(230, 213, 184, 0.4);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+        }
+        h2, h3 {
+            color: #e6d5b8;
+            font-size: 14px;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #e6d5b8;
+            border-radius: 5px;
+            width: 90%;
+            background: #1a1a1a;
+            color: #e6d5b8;
+            font-size: 12px;
+            text-align: center;
+        }
+        button {
+            background-color: #e6d5b8;
+            color: #1a1a1a;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 12px;
+        }
+        button:hover {
+            background-color: #c4a77d;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">LINEAR REGRESSION</div>
+    <div class="card">
+        <h2>Enter a value for X:</h2>
+        <form method="post">
+            <input type="text" name="X" required>
+            <br>
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction is not none %}
+            <h3>Prediction: {{ prediction }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
