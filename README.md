@@ -1,6 +1,7 @@
 # Linear Regression Predictor (From Scratch)
 
 This project implements a **Linear Regression Model from scratch** (without using Scikit-Learn) in **Flask** and deploys it on **Render**. The application allows users to input a value for `X` and receive a predicted output based on a manually implemented regression algorithm.
+🌐 Live Demo: https://linear-reg.onrender.com/
 
 ## Features 🚀
 
